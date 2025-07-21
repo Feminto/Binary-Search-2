@@ -5,7 +5,7 @@
 
 
 class Solution:
-    def findPeakElement(self, nums: List[int]) -> int:
+    def findPeakElement(self, nums: list[int]) -> int:
         if nums == None or len(nums) == 0:
             return -1
         if len(nums) == 1:
