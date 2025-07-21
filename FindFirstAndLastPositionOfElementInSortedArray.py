@@ -4,7 +4,7 @@
 # Any problem you faced while coding this: NO
 
 class Solution:
-    def searchRange(self, nums: List[int], target: int) -> List[int]:
+    def searchRange(self, nums: list[int], target: int) -> list[int]:
         if nums == None or len(nums) == 0:
             return [-1,-1]
             
@@ -17,7 +17,7 @@ class Solution:
         return [first,last]
 
     # find the first occurence of target value:
-    def bs1(self, nums: List[int], target: int) -> List[int]:
+    def bs1(self, nums: list[int], target: int) -> list[int]:
         low = 0
         high = len(nums) - 1
 
@@ -37,7 +37,7 @@ class Solution:
         return -1
 
     # find last occurence of target value:
-    def bs2(self, nums: List[int], target: int) -> List[int]:
+    def bs2(self, nums: list[int], target: int) -> list[int]:
         low = 0
         high = len(nums) - 1
 
